@@ -18,23 +18,18 @@ public class OfiSede implements Serializable {
     @Id
     @Column(name = "COD_SEDE", length = 8, nullable = false)
     private String codSede;
-
     @NotNull
     @Column(name = "COD_INSTITUCION", length = 3, nullable = false)
     private Integer codInstitucion;
-
     @NotNull
     @Column(name = "NOMBRE", length = 128, nullable = false)
     private String nombre;
-
     @NotNull
     @Column(name = "DIRECCION", length = 128, nullable = false)
     private String direccion;
-
     @NotNull
     @Column(name = "ES_PRINCIPAL", nullable = false)
     private Boolean esPrincipal;
-
     @NotNull
     @Column(name = "PRESUPUESTO", precision = 18, scale = 2, nullable = false)
     private BigDecimal presupuesto;

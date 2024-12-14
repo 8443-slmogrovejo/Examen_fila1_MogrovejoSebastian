@@ -17,18 +17,14 @@ public class OfiEdificioBloque implements Serializable {
     @Id
     @Column(name = "COD_EDIFICIO_BLOQUE", length = 8, nullable = false)
     private String codEdificioBloque;
-
     @NotNull
     @Column(name = "COD_EDIFICIO", length = 8, nullable = false)
     private String codEdificio;
-
     @NotNull
     @Column(name = "NOMBRE_BLOQUE", length = 128, nullable = false)
     private String nombreBloque;
-
     @Column(name = "DESCRIPCION", length = 500)
     private String descripcion;
-
     @ManyToOne
     @JoinColumn(name = "COD_EDIFICIO", referencedColumnName = "COD_EDIFICIO", insertable = false, updatable = false)
     private OfiEdificio ofiEdificio;

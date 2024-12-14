@@ -15,15 +15,12 @@ public class OfiInstitucion implements Serializable {
     @Id
     @Column(name = "COD_INSTITUCION", length = 3, nullable = false)
     private Integer codInstitucion;
-    
     @NotNull
     @Column(name = "RUC", length = 13, nullable = false)
     private String ruc;
-    
     @NotNull
     @Column(name = "RAZON_SOCIAL", length = 250, nullable = false)
     private String razonSocial;
-    
     @NotNull
     @Column(name = "NOMBRE_COMERCIAL", length = 250, nullable = false)
     private String nombreComercial;

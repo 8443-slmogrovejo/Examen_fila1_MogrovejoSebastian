@@ -15,35 +15,26 @@ public class OfiEdificio implements Serializable {
     @Id
     @Column(name = "COD_EDIFICIO", length = 8, nullable = false)
     private String codEdificio;
-
     @NotNull
     @Column(name = "COD_SEDE", length = 8, nullable = false)
     private String codSede;
-
     @NotNull
     @Column(name = "NOMBRE", length = 128, nullable = false)
     private String nombre;
-
     @Column(name = "COD_ALTERNO", length = 16)
     private String codAlterno;
-
     @Column(name = "DESCRIPCION", length = 500)
     private String descripcion;
-
     @Column(name = "DIRECCION", length = 256)
     private String direccion;
-
     @Column(name = "COMENTARIO", length = 1000)
     private String comentario;
-
     @NotNull
     @Column(name = "MANEJA_BLOQUES", nullable = false)
     private Boolean manejaBloques;
-
     @NotNull
     @Column(name = "POSEE_AULAS", nullable = false)
     private Boolean poseeAulas;
-
     @NotNull
     @Column(name = "PISOS", length = 2, nullable = false)
     private Integer pisos;
@@ -54,8 +45,6 @@ public class OfiEdificio implements Serializable {
     public OfiEdificio(String codEdificio) {
         this.codEdificio = codEdificio;
     }
-
-    
 
     @Override
     public int hashCode() {
