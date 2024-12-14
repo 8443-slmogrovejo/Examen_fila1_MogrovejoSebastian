@@ -20,7 +20,6 @@ public class OfiAula implements Serializable {
 
     @EmbeddedId
     private AulaPK pk;
-    @NotNull
     @Column(name = "COD_TIPO_AULA", length = 10, nullable = false)
     private String codTipoAula;
     @Column(name = "COD_ALTERNO", length = 10)
